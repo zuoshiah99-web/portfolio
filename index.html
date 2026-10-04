@@ -98,6 +98,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,6vw,80px);align-items:start}
+@media (max-width:1100px){.wrow{flex-wrap:wrap;row-gap:40px}.wrow .card.h{width:calc((100% - 28px)/2)}}
 @media (max-width:860px){.contact{grid-template-columns:minmax(0,1fr)}}
 form{display:flex;flex-direction:column;gap:18px}
 label{display:flex;flex-direction:column;gap:6px;font-weight:700}
@@ -119,11 +120,11 @@ footer{padding:40px var(--gut) 56px;display:flex;justify-content:space-between;g
 .wgrid{display:none}
 .wrows{display:flex;flex-direction:column;gap:clamp(40px,6vw,72px);container-type:inline-size}
 .wrow{--u:min(28px,calc((100cqw - 84px)/50));display:flex;justify-content:space-between;align-items:flex-start;gap:28px}
-.wrow .card{flex:none}.wrow .card.h{width:calc(var(--u)*16)}.wrow .card.v{width:calc(var(--u)*9)}
-.wrow .card.v h3{font-size:1.15rem}
-.wrow .card.h{margin-top:calc(var(--u)*3.5)}
+.wrow .card{flex:none}.wrow .card.h{width:calc((100% - 84px)/4)}
+.wrow .card h3{font-size:1.15rem}
 .mw{display:flex;align-items:center}
 .mw .cover{width:100%}.cover.v{aspect-ratio:9/16}
+@media (max-width:1100px){.wrow{flex-wrap:wrap;row-gap:40px}.wrow .card.h{width:calc((100% - 28px)/2)}}
 @media (max-width:860px){.wrow{flex-direction:column;align-items:stretch;gap:40px}.wrow .card.h,.wrow .card.v{width:100%;margin-top:0}.card.v .mw{justify-content:flex-start}.card.v .cover{width:min(100%,200px)}}
 
 .card{display:flex;flex-direction:column;gap:12px;min-width:0}
@@ -298,15 +299,15 @@ a.cover{color:var(--mute)}
     <div class="wrows">
 <div class="wrow">
 <article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/videoseries?list=PLS6-QYFengZo" title="實固 × 中科大領航" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">企業短影片</span><h3>實固 × 中科大領航</h3><p>3 部短片＋1 部採訪長片</p></article>
-<article class="card v rv"><div class="mw"><div class="cover vid v"><iframe src="https://www.youtube.com/embed/videoseries?list=PLD8ek7UI5riM" title="MOTEX 華城綠能 × 中科大領航" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">企業短影片</span><h3>MOTEX 華城綠能 × 中科大領航</h3><p>3 部直式短片＋1 部 16:9 官網橫幅影片</p></article>
-<article class="card v rv"><div class="mw"><div class="cover vid v"><iframe src="https://www.youtube.com/embed/yrsxtfM71Cc" title="《傳說對決》排位精華" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">遊戲精華短影片</span><h3>《傳說對決》排位精華</h3><p>隊友太調皮了，不記錄有愧於其他優秀隊友 :)</p></article>
+<article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/videoseries?list=PLD8ek7UI5riM" title="MOTEX 華城綠能 × 中科大領航" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">企業短影片</span><h3>MOTEX 華城綠能 × 中科大領航</h3><p>3 部直式短片＋1 部 16:9 官網橫幅影片</p></article>
+<article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/yrsxtfM71Cc" title="《傳說對決》排位精華" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">遊戲精華短影片</span><h3>《傳說對決》排位精華</h3><p>隊友太調皮了，不記錄有愧於其他優秀隊友 :)</p></article>
 <article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/WV4kLEQiPto" title="高科大營建系 USR 活動紀錄片" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">大學 USR 計畫長片</span><h3>高科大營建系 USR 活動紀錄片</h3><p>獨立剪輯，於六龜新威國小開幕儀式播出</p></article>
 </div>
 <div class="wrow">
 <article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/O1PVeFNxNUg" title="《社會蜉蝣》AI Music Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">AI 影片</span><h3>《社會蜉蝣》AI Music Video</h3><p>歌頌著社畜悲歌</p></article>
 <article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/BLlb0dUwz-8" title="《阿緯自助餐》" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">AI 影片</span><h3>《阿緯自助餐》</h3><p>《社會蜉蝣》番外篇</p></article>
-<article class="card v rv"><div class="mw"><div class="cover vid v"><iframe src="https://www.youtube.com/embed/3SOLuMWGTVQ" title="《東西節慶大戰》幽默短影音" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">AI 影片</span><h3>《東西節慶大戰》幽默短影音</h3><p>藉著馬斯克的雙手讓劉德華跟瑪麗亞凱莉同台</p></article>
-<article class="card v rv"><div class="mw"><div class="cover vid v"><iframe src="https://www.youtube.com/embed/0ZH6dzKCR6Q" title="PAÑPURI 禮盒廣告" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">AI 影片</span><h3>PAÑPURI 禮盒廣告（練習作品）</h3><p>腳本靈感來自泰國經典的感人反轉劇情廣告</p></article>
+<article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/3SOLuMWGTVQ" title="《東西節慶大戰》幽默短影音" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">AI 影片</span><h3>《東西節慶大戰》幽默短影音</h3><p>藉著馬斯克的雙手讓劉德華跟瑪麗亞凱莉同台</p></article>
+<article class="card h rv"><div class="mw"><div class="cover vid"><iframe src="https://www.youtube.com/embed/0ZH6dzKCR6Q" title="PAÑPURI 禮盒廣告" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div><span class="mono">AI 影片</span><h3>PAÑPURI 禮盒廣告（練習作品）</h3><p>腳本靈感來自泰國經典的感人反轉劇情廣告</p></article>
 </div>
 </div>
   </div>
